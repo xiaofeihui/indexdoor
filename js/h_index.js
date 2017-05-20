@@ -16,8 +16,8 @@ $(function(){
 function showlist(lmid,len,zi_len,name,type){
 	var name = $(name);
 	$.ajax({
-		type:'post',
-		url:'https://github.com/xiaofeihui/indexdoor/blob/master/datajson.json',
+		type:'get',
+		url:'./datajson.json',
 		dataType:'json',
 		success:function(data){
 			$.each(data,function(key,value){
@@ -86,8 +86,8 @@ function changeinput(obj){
 function show_video(lmid,name){
 	console.log(lmid,name);
 	$.ajax({
-		type:'post',
-		url:'https://github.com/xiaofeihui/indexdoor/blob/master/datajson.json',
+		type:'get',
+		url:'./datajson.json',
 		dataType:'json',
 		success:function(data){
 			$.each(data,function(key,value){
